@@ -1,3 +1,4 @@
+/*
 var Contacts = React.createClass({
   propTypes: {
     items: React.PropTypes.array.isRequired,
@@ -13,5 +14,27 @@ var Contacts = React.createClass({
     );
   }
 });
+*/
+
+var Contacts = React.createClass({
+  propTypes: {
+    items: React.PropTypes.array.isRequired,
+  },
+
+  render: function() {
+    var contacts8 = this.props.items.map(function(contact) {
+        return React.createElement(Contact, {item: contact, key: contact.id});
+    });
+
+    return (
+      <ul className={'contactsList'}>contacts8</ul>
+    );
+  }
+});
+
+
+
+
+
 
 
