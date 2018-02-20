@@ -30,8 +30,8 @@ var App = React.createClass({
     return (
       
       <div className={'contactItem'}>  
-        React.createElement(ContactForm, {contact: contactForm}),
-        React.createElement(Contacts, {items: contactsArray}, {})
+        <ContactForm contact={contactForm}/>
+        <Contacts items={contactsArray}/>
       </div>
       
     );

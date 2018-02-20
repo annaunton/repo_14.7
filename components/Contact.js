@@ -31,16 +31,41 @@ var Contact = React.createClass({
 
   render: function() {
 
+      var stylesContactItem = {
+        background: '#ccc',
+        margin: '10px auto',
+        width: '80%',
+        padding: '40px'
+      };
+
+      var stylesContacImage = {
+        width: '100px',
+        float: 'left'
+      };
+
+     
+      var stylesContactLabel = {
+        marginLeft: '150px',
+        color: '#fff',
+        fontWeight: 'bold',
+        textShadow: '2px 2px 5px black'
+      };
+
+      var stylesContactEmail
+        marginLeft: '50px',
+        color: 'deeppink'
+      };
+
     return (
-      <div className={'contactItem'}>
-        <img className={'contactImage'} src={'http://icons.veryicon.com/ico/System/100%20Flat%20Vol.%202/contacts.ico'}/>
-        <p className={'contactLabel'}>
+      <div className={'contactItem'} style={stylesContactItem}>
+        <img className={'contactImage'} src={'http://icons.veryicon.com/ico/System/100%20Flat%20Vol.%202/contacts.ico'} style={stylesContactImage}/>
+        <p className={'contactLabel'} style={stylesContactLabel}>
           Imię: {this.props.item.firstName}
         </p>
-        <p>
+        <p className={'contactLabel'} style={stylesContactLabel}>
           Nazwisko: {this.props.item.lastName}
         </p>
-        <a href={'mailto:' + this.props.item.email}>
+        <a href={'mailto:' + this.props.item.email} style={stylesContactEmail}>
           {this.props.item.email}
         </a>
       </div>

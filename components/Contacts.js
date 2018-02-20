@@ -26,8 +26,18 @@ var Contacts = React.createClass({
         return React.createElement(Contact, {item: contact, key: contact.id});
     });
 
+    var stylescontactsList = {
+      background: '#EEE',
+      padding: '20px 0', 
+      width: '90%',
+      maxWidth: '1000px',
+      margin: '0 auto',
+      marginTop: '20px'
+
+    };
+
     return (
-      <ul className={'contactsList'}>
+      <ul className={'contactsList'} style={stylescontactsList}>
       listOfContacts;
       </ul>
     );
