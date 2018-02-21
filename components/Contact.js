@@ -51,7 +51,7 @@ var Contact = React.createClass({
         textShadow: '2px 2px 5px black'
       };
 
-      var stylesContactEmail
+      var stylesContactEmail = {
         marginLeft: '50px',
         color: 'deeppink'
       };

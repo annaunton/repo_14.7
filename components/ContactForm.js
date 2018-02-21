@@ -55,7 +55,7 @@ var ContactForm = React.createClass({
       borderRadius: '2px'
     };
 
-    var stylesContactFormButton {
+    var stylesContactFormButton = {
       fontFamily: '"Open Sans", sans-serif',
       fontSize: '16px',
       background: '#ccc',
