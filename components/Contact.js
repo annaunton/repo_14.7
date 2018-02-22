@@ -38,7 +38,7 @@ var Contact = React.createClass({
         padding: '40px'
       };
 
-      var stylesContacImage = {
+      var stylesContactImage = {
         width: '100px',
         float: 'left'
       };
